@@ -2,7 +2,7 @@
 
 # statusBar
 
-```bash
+```javascript
 
 class routApp extends StatelessWidget {
   const routApp({super.key});
@@ -18,11 +18,14 @@ class routApp extends StatelessWidget {
     );
   }
 }
+
 ```
+
+
 
 # routes
 
-```bash
+```javascript
 
 
 import 'package:flutter/material.dart';
@@ -36,4 +39,5 @@ class AppRouts{
     '/' : (context) => HomeScreen(),
   };
 }
+
 ```
