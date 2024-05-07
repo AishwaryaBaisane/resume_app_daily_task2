@@ -1,16 +1,39 @@
 # resume_app_daily_task2
 
-A new Flutter project.
+# statusBar
 
-## Getting Started
+```bash
 
-This project is a starting point for a Flutter application.
+class routApp extends StatelessWidget {
+  const routApp({super.key});
 
-A few resources to get you started if this is your first Flutter project:
+  @override
+  Widget build(BuildContext context) {
+    SystemChrome.setSystemUIOverlayStyle(
+      SystemUiOverlayStyle(statusBarColor: Colors.red),
+    );
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      routes: AppRouts.routes,
+    );
+  }
+}
+```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+# routes
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```bash
+
+
+import 'package:flutter/material.dart';
+
+import '../Screen/HomeScreen.dart';
+
+
+class AppRouts{
+  static Map<String, Widget Function(BuildContext)> routes={
+
+    '/' : (context) => HomeScreen(),
+  };
+}
+```
