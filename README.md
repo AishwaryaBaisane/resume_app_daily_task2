@@ -159,6 +159,86 @@ void main()
 ```
 
 
+## User input of Map :
+
+```dart
+
+import 'dart:io';
+
+void main()
+{
+  String? name,email,add,companyName,course;
+  var age,par,salary,MobileNumber,id;
+
+   Map l1= 
+    {
+      'name': name,
+      'age':age,
+      'par': par,
+      'salary': salary,
+      'e-mail' : email,
+      'add' : add,
+      'companyName' : companyName,
+      'course' :course,
+      'mobileNumber' : MobileNumber,
+      'id' : id,
+
+
+    };
+
+    stdout.write('enter name ');
+    name = stdin.readLineSync()!;
+    l1.addAll({'name':name});
+
+    stdout.write('enter age :');
+    age = int.parse(stdin.readLineSync()!);
+    l1.addAll({'age':age});
+
+    stdout.write('Enter e-mail :');
+    email = stdin.readLineSync()!;
+    l1.addAll({'e-mail' : email});
+
+    stdout.write('Enter add :');
+    add = stdin.readLineSync()!;
+    l1.addAll({'add' : add});
+
+    stdout.write('Enter comany name :');
+    companyName = stdin.readLineSync()!;
+    l1.addAll({'companyName' : companyName});
+
+    stdout.write('Enter course :');
+    course = stdin.readLineSync()!;
+    l1.addAll({'course' : course});
+
+    stdout.write('Enter mobile  number :');
+    MobileNumber = int.parse(stdin.readLineSync()!);
+    l1.addAll({'mobileNumber' : MobileNumber});
+    
+    stdout.write('Enter id :');
+    id = int.parse(stdin.readLineSync()!);
+    l1.addAll({'id' : id});
+
+
+    stdout.write('enter parsantage :');
+    par = int.parse(stdin.readLineSync()!);
+    l1.addAll({'par':par});
+
+    stdout.write('enter salary :');
+    salary = int.parse(stdin.readLineSync()!);
+    l1.addAll({'salary':salary});
+
+    print("\n");
+
+    l1.forEach((key, value) {
+      print("${key} : ${value}");
+    });
+  
+}
+```
+
+
+
+
 
 
 
