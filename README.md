@@ -284,7 +284,4 @@ class AppRouts{
 
 ```
 
-<P>
-  <img src = "https://github.com/AishwaryaBaisane/resume_app_daily_task2/assets/149373597/5d421d5a-a262-49b4-b5d4-f726a76382bf" height = 25% width= 25%>
-</P>
 
